@@ -2,6 +2,8 @@
 ## A Math Bot developed in RASA to perform simple mathematical operations
 ### Developed for BusinessOnBot Intern task
 
+![1636743855-rasaogimagegeneral](https://user-images.githubusercontent.com/86421191/221841604-e8402864-837f-4a29-8561-a6c225ff1130.jpg)
+
 ## OUTPUT :
 
 ### BOT TRAINING
