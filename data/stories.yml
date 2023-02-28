@@ -1,0 +1,46 @@
+stories:
+- story: user enters the values
+  steps:
+  - intent: greet
+  - action: utter_functions
+  - intent: operation
+  - action: utter_first_number
+  - intent: operands
+    entities:
+    - num1
+    - num2
+  - action: action_math_operation
+  - intent: greet_bye
+  - action: utter_bye
+
+  # - action: utter_second_number
+  # - intent: operand2
+  #   entities:
+  #   - num2
+  # - action: action_math_operation
+  # - intent: greet_bye
+  # - action: utter_bye
+
+- story: repeat 
+  steps:
+  - intent: more
+  - action: utter_more_operation
+  - intent: operation
+  - action: utter_first_number
+  # - intent: operand1
+  - intent: operands
+    entities:
+    - num1
+    - num2
+  - action: action_math_operation
+  - intent: greet_bye
+  - action: utter_bye
+
+
+  # - action : utter_second_number
+  # - intent: operand2
+  #   entities:
+  #   - num2
+  # - action: action_math_operation
+  # - intent: greet_bye
+  # - action: utter_bye

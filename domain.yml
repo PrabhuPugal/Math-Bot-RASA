@@ -1,0 +1,44 @@
+intents:
+- greet
+- greet_bye
+- operation
+- operands
+- more
+# - operand1
+# - operand2
+
+entities:
+- num1
+- num2
+- fun
+
+slots:
+  num1:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: num1
+  num2:
+    type: float
+    mappings:
+        - type: from_entity
+          entity: num2
+  fun:
+    type: text
+    mappings:
+        - type: from_entity
+          entity: fun
+actions:
+  - action_math_operation
+responses:
+  utter_functions:
+  - text: Hello! I am a Math Bot. What mathematical operation I want to do ?
+  utter_first_number:
+  # - text: What is the first operand?
+    - text: What are the operands?
+  # utter_second_number:
+  # - text: What is the second operand?
+  utter_more_operation:
+  - text: Sure! I can do. What mathematical operation I want to do ?    
+  utter_bye:
+  - text: Ok bye Thank you for choosing me       

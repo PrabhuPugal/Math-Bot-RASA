@@ -1,0 +1,60 @@
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - Hey dude!
+    - Pirabi
+    - Yo !
+- intent: greet_bye
+  examples: |
+    - bye
+    - goodbye
+    - thank 
+       
+- intent: operation
+  examples: |
+    - [Addition](fun)
+    - [Subtraction](fun)
+    - [Multiplication](fun)
+    - [Division](fun)
+    - [add](fun)
+    - [sub](fun)
+    - [mul](fun)
+    - [div](fun)
+    - [addition](fun)
+    - [subtraction](fun)
+    - [multiply](fun)
+    - [division](fun)
+
+- intent: operands
+  examples: |
+    - [8](num1) [50](num2)
+    - [100](num1),[87868.654](num2)
+    - [60](num1) & [26](num2)
+    - [0](num1) and [50](num2)
+
+
+# - intent: operand1
+#   examples: |
+#     - [8](num1)
+#     - [50](num1)
+#     - [100](num1)
+#     - [87868.654](num1)
+#     - [0](num1)
+    
+# - intent: operand2
+#   examples: |
+#     - [90](num2)
+#     - [580](num2)
+#     - [1](num2)
+#     - [8765.89](num2)
+#     - [6](num2)
+
+- intent: more
+  examples: |
+    - more operations
+    - more operation
+    - once more
+
+
